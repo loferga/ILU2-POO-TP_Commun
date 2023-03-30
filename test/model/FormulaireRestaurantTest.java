@@ -5,6 +5,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import model.formulaire.FormulaireRestaurant;
+
 class FormulaireRestaurantTest {
 	static FormulaireRestaurant formulaire;
 	static final int NB_PERSONNES = 3;

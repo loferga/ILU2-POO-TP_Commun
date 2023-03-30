@@ -47,6 +47,6 @@ public class PresentationJFrameModeAdministrateur extends JFrame {
 	}
 
 	public void presentationClientAjoute(String nom, String prenom, String email) {
-		textArea.append("Nom: " + nom + " Prénom: " + prenom + "Adresse email: " + email + "\n");
+		textArea.append("Nom: " + nom + " Prénom: " + prenom + " Adresse email: " + email + "\n");
 	}
 }

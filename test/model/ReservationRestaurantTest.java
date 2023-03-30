@@ -5,6 +5,9 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import model.reservation.Reservation;
+import model.reservation.ReservationRestaurant;
+
 class ReservationRestaurantTest {
 	static ReservationRestaurant reservation;
 	static final int NB_PERSONNES = 2;
