@@ -5,11 +5,11 @@ import model.reservation.Reservation;
 
 public abstract class EntiteReservable<F extends Formulaire> {
 	
-	private CalendrierAnnuel cal;
+	protected CalendrierAnnuel cal;
 	private int id;
 	
 	public EntiteReservable() {
-		
+		cal = new CalendrierAnnuel();
 	}
 	
 	public int getId() {

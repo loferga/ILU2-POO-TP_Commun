@@ -5,7 +5,9 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import model.formulaire.FormulaireRestaurant;
 import model.reservation.ReservationRestaurant;
+import model.restaurant.Restaurant;
 
 class RestaurantTest {
 	FormulaireRestaurant formulaire;
@@ -26,13 +28,13 @@ class RestaurantTest {
 
 	@Test
 	void testDonnerPossibilites() {
-		int[] possibilites = restaurant.donnerPossibilites(formulaire);
+		int[] possibilites = restaurant.donnerPossibilitees(formulaire);
 		int[] expected = { 0, 2, 3, 0, 0, 0 };
 		assertArrayEquals(expected, possibilites,"Les tables numeros 2 et 3 devraient pouvoir être choisi");
 
 		int[] expected2 = { 0, 2, 3, 0, 0, 0, 7};
 		restaurant.ajouterTable(3);
-		possibilites = restaurant.donnerPossibilites(formulaire);
+		possibilites = restaurant.donnerPossibilitees(formulaire);
 		assertArrayEquals(expected2, possibilites,"Les tables numeros 2, 3 et 7 devraient pouvoir être choisi");
 	}
 

@@ -2,7 +2,7 @@ package model;
 
 import model.formulaire.Formulaire;
 
-public class CentraleReservation <E extends EntiteReservable, F extends Formulaire> {
+public class CentraleReservation <E extends EntiteReservable<F>, F extends Formulaire> {
 	
 	private E[] entites;
 	private int nbEntites;

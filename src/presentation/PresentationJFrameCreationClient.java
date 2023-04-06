@@ -58,7 +58,7 @@ public class PresentationJFrameCreationClient extends JFrame {
 		textFieldNom.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		textFieldNom.setColumns(10);
 
-		lblPrenom = new JLabel("Pr\u00E9nom");
+		lblPrenom = new JLabel("Prénom");
 		lblPrenom.setFont(new Font("Tahoma", Font.PLAIN, 18));
 
 		lblEmail = new JLabel("Adresse email:");
@@ -100,7 +100,7 @@ public class PresentationJFrameCreationClient extends JFrame {
 		lblMdpConfirmer = new JLabel("Confirmez mot de passe:");
 		lblMdpConfirmer.setFont(new Font("Tahoma", Font.PLAIN, 18));
 
-		lblNewLabel = new JLabel("Pour la cr\u00E9ation de votre compte, veuillez saisir les informations suivantes:");
+		lblNewLabel = new JLabel("Pour la création de votre compte, veuillez saisir les informations suivantes:");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		lblNewLabel.setHorizontalAlignment(SwingConstants.LEFT);
 		lblNewLabel.setVerticalAlignment(SwingConstants.TOP);

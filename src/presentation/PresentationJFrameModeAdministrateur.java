@@ -21,14 +21,14 @@ public class PresentationJFrameModeAdministrateur extends JFrame {
 	 * Create the frame.
 	 */
 	public PresentationJFrameModeAdministrateur() {
-		setTitle("Fen\u00EAtre administrateur");
+		setTitle("Fenêtre administrateur");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 498, 462);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 
-		lblClientAjoutes = new JLabel("Liste des clients ajout\u00E9s:");
+		lblClientAjoutes = new JLabel("Liste des clients ajoutés:");
 		lblClientAjoutes.setFont(new Font("Tahoma", Font.PLAIN, 14));
 
 		textArea = new JTextArea();
