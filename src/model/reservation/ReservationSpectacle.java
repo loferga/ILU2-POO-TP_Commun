@@ -10,5 +10,10 @@ public class ReservationSpectacle extends Reservation {
 		this.numZone = numZone;
 		this.numChaise = numChaise;
 	}
+	
+	public void do_nothing() {
+		numZone = (int) numZone;
+		numChaise = (int) numChaise;
+	}
 
 }

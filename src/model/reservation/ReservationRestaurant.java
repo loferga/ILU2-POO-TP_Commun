@@ -14,12 +14,12 @@ public class ReservationRestaurant extends Reservation {
 	@Override
 	public String toString() {
 		StringBuilder chaine = new StringBuilder();
-		chaine.append("Le " + super.jour + "/" + super.mois + " : ");
-		chaine.append("table n°" + numTable + " pour ");
+		chaine.append("Le " + super.jour + "/" + super.mois + "\n");
+		chaine.append("Table " + numTable + " pour ");
 		if (numService == 1)
-			chaine.append("le premier service.\n");
+			chaine.append("le premier service.");
 		else
-			chaine.append("le deuxième service.\n");
+			chaine.append("le deuxième service.");
 
 		return chaine.toString();
 	}

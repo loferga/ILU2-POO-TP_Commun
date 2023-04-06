@@ -20,12 +20,12 @@ public abstract class EntiteReservable<F extends Formulaire> {
 		this.id = id;
 	}
 	
-	public boolean estLibre(int jour, int mois) {
-		return cal.estLibre(jour, mois);
+	public boolean estLibre(F formulaire) {
+		return cal.estLibre(formulaire.getJour(), formulaire.getMois());
 	}
 	
-	public abstract boolean compatible();
+	public abstract boolean compatible(F formulaire);
 	
-	public abstract Reservation reserver();
+	public abstract Reservation reserver(F formulaire);
 	
 }

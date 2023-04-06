@@ -13,4 +13,10 @@ public class ReservationHotel extends Reservation {
 		this.numChambre = numChambre;
 	}
 	
+	public void do_nothing() {
+		nbLitSimple = (int) nbLitSimple;
+		nbLitDouble = (int) nbLitDouble;
+		numChambre = (int) numChambre;
+	}
+	
 }
