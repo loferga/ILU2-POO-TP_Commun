@@ -2,23 +2,12 @@ package model;
 
 public class CalendrierAnnuel {
 	
-	private enum Mois {
-		
-		// une enum est aussi une class donc est une classe interne, un modèle équivalent de l'enum avec une class serait:
-		/*
-		 * public class Mois {
-		 * 		public final Mois JANVIER = new Mois("Janvier", 31);
-		 * 		public final Mois FEVRIER = new Mois("Février", 28);
-		 * 		...
-		 */
-		
-		JANVIER("Janvier", 31), FEVRIER("Février", 28), MARS("Mars", 31), AVRIL("Avril", 30), MAI("Mai", 31), JUIN("Juin", 30), JUILLET("Juillet", 31),
-		AOUT("Août", 31), SEMPTEMBRE("Septembre", 30), OCTOBRE("Octobre", 31), NOVEMBRE("Novembre", 30), DECEMBRE("Décembre", 31);
+	private class Mois {
 		
 		private String nom;
 		private boolean[] jours;
 		
-		private Mois(String nom, int nbJours) {
+		public Mois(String nom, int nbJours) {
 			this.nom = nom;
 			jours = new boolean[nbJours];
 		}
@@ -45,7 +34,20 @@ public class CalendrierAnnuel {
 	private Mois[] mois;
 	
 	public CalendrierAnnuel() {
-		mois = Mois.values();
+		mois = new Mois[] {
+				new Mois("Janvier", 31),
+				new Mois("Février", 28),
+				new Mois("Mars", 31),
+				new Mois("Avril", 30),
+				new Mois("Mai", 31),
+				new Mois("Juin", 30),
+				new Mois("Juillet", 31),
+				new Mois("Août", 31),
+				new Mois("Septembre", 30),
+				new Mois("Octobre", 31),
+				new Mois("Novembre", 30),
+				new Mois("Décembre", 31)
+		};
 	}
 	
 	public boolean estLibre(int jour, int mois) {

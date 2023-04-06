@@ -14,14 +14,11 @@ public class CentraleReservation <E extends EntiteReservable<F>, F extends Formu
 	}
 	
 	public int ajouterEntite(E entite) {
-		System.out.println("Table " + (nbEntites+1) + " ajoutée à l'indice " + nbEntites);
 		entites[nbEntites++] = entite;
 		return nbEntites;
 	}
 	
 	public int[] donnerPossibilites(F formulaire) {
-		System.out.println("Form: id=" + formulaire.getIdentificationEntite() + " jour=" + formulaire.getJour()
-				+ " mois=" + formulaire.getMois());
 		int[] dispos = new int[nbEntites];
 		for (int i = 0; i<nbEntites; i++) {
 			E e = entites[i];
