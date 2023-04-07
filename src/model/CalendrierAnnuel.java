@@ -2,7 +2,24 @@ package model;
 
 public class CalendrierAnnuel {
 	
-	private class Mois {
+	private static class Mois {
+		
+		public static Mois[] getMois() {
+			return new Mois[] {
+					new Mois("Janvier", 31),
+					new Mois("Février", 28),
+					new Mois("Mars", 31),
+					new Mois("Avril", 30),
+					new Mois("Mai", 31),
+					new Mois("Juin", 30),
+					new Mois("Juillet", 31),
+					new Mois("Août", 31),
+					new Mois("Septembre", 30),
+					new Mois("Octobre", 31),
+					new Mois("Novembre", 30),
+					new Mois("Décembre", 31)
+			};
+		}
 		
 		private String nom;
 		private boolean[] jours;
@@ -34,20 +51,7 @@ public class CalendrierAnnuel {
 	private Mois[] mois;
 	
 	public CalendrierAnnuel() {
-		mois = new Mois[] {
-				new Mois("Janvier", 31),
-				new Mois("Février", 28),
-				new Mois("Mars", 31),
-				new Mois("Avril", 30),
-				new Mois("Mai", 31),
-				new Mois("Juin", 30),
-				new Mois("Juillet", 31),
-				new Mois("Août", 31),
-				new Mois("Septembre", 30),
-				new Mois("Octobre", 31),
-				new Mois("Novembre", 30),
-				new Mois("Décembre", 31)
-		};
+		mois = Mois.getMois();
 	}
 	
 	public boolean estLibre(int jour, int mois) {
